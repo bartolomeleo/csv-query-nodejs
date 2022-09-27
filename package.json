@@ -1,0 +1,13 @@
+{
+  "name": "csv-query-nodejs",
+  "version": "1.0.0",
+  "description": "query csv file",
+  "main": "src/search.js",
+  "repository": "git@lbart:bartolomeleo/csv-query-nodejs.git",
+  "author": "lbart",
+  "license": "MIT",
+  "type": "module",
+  "devDependencies": {
+    "jest": "^29.0.3"
+  }
+}
