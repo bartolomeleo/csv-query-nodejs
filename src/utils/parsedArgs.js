@@ -15,12 +15,12 @@ const validateArgs = (args) => {
                 errorMessage+= `Missing ${key} arguement\n`;                
             } else {
                 if(key === 'filePath' && extname(args[key]) !== '.csv') {                
-                    errorMessage+= `Invalid ${key} extension\n`;
+                    errorMessage+= 'Invalid filePath extension\n';
                 }else if(key === 'filePath' && !existsSync(args[key])) {
-                    errorMessage+= 'No such file in the directory\n'
+                    errorMessage+= 'File does not exist\n'
                 }
                 if(key === 'columnIndex' && isNaN(parseInt(args[key]))) {
-                    errorMessage+='Index Column should be an integer'
+                    errorMessage+='Index Column should be an integer\n'
                 }
             }                    
         }

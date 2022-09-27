@@ -2,12 +2,19 @@
   "name": "csv-query-nodejs",
   "version": "1.0.0",
   "description": "query csv file",
-  "main": "src/search.js",
+  "main": "src/",
   "repository": "git@lbart:bartolomeleo/csv-query-nodejs.git",
   "author": "lbart",
   "license": "MIT",
-  "type": "module",
+  "scripts": {
+    "test": "node --experimental-vm-modules ./node_modules/.bin/jest --coverage --logHeapUsage",
+    "start": "node src/search.js"
+  },
   "devDependencies": {
     "jest": "^29.0.3"
-  }
+  },
+  "engines": {
+    "node": ">=12.22.9"    
+  },
+  "type": "module"
 }
