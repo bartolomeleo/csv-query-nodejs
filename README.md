@@ -1,1 +1,15 @@
 # csv-query-nodejs
+
+`$ node src/search.js ./file.csv 2 Alberto`
+
+### CSV Format
+
+1,Rossi,Fabio,01/06/1990;\
+2,Gialli,Alessandro,02/07/1989;\
+3,Verdi,Alberto,03/08/1987;
+
+The number 2 represents the index of the column to search in (in the previous file the name) and Alberto represents the search key.
+
+The output of the command must be the corresponding line, in our case: 
+
+`3, Verdi, Alberto,03/08/1987;`
