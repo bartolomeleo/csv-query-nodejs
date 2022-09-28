@@ -1,8 +1,8 @@
 import { existsSync } from 'fs';
-import { extname, resolve } from 'path'
+import { extname } from 'path'
 
 const formatArgs = (argv) => ({
-    filePath: resolve(argv[2]),
+    filePath: argv[2],
     columnIndex: argv[3],
     searchValue: argv[4],
 })
@@ -30,7 +30,6 @@ const validateArgs = (args) => {
 
 export const parsedArgs = (argv) => {
     const args = formatArgs(argv);
-    console.log(args)
     validateArgs(args)
     return args
 }
