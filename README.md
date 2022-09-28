@@ -35,4 +35,6 @@ The output of the command must be the corresponding line, in our case:
 ```
 ### Test Results
 
+> Use Linux or Mac OS for running the unit test
+
 <img src="https://user-images.githubusercontent.com/98268101/192625224-37f18c26-f879-4639-bbe1-3b1ee0a74c7c.png" alt="test-result" width="600"/>
